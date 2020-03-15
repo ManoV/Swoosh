@@ -1,9 +1,11 @@
-package com.example.swoosh
+package com.example.swoosh.controller
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.example.swoosh.utilities.EXTRA_LEAGUE
+import com.example.swoosh.R.layout
 import kotlinx.android.synthetic.main.activity_league.coedLeagueBtn
 import kotlinx.android.synthetic.main.activity_league.mensLeagueBtn
 import kotlinx.android.synthetic.main.activity_league.womensLeagueBtn
@@ -14,7 +16,7 @@ class LeagueActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_league)
+        setContentView(layout.activity_league)
     }
 
     fun onMensClicked(view: View) {
